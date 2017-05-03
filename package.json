@@ -1,5 +1,5 @@
 {
-  "name": "vue-django-webpack",
+  "name": "shijo-karasuma",
   "version": "1.0.0",
   "description": "boiler place for django vue webpack and django",
   "author": "Long Tran <longtm.it@gmail.com>",
@@ -89,5 +89,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuk1ty/shijo-karasuma.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuk1ty/shijo-karasuma/issues"
+  },
+  "homepage": "https://github.com/yuk1ty/shijo-karasuma#readme"
 }
