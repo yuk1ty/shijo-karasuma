@@ -4,3 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+shijo-karasuma	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^# shijo-karasuma$/;"	function	line:1
+作業するとき	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^## 作業するとき$/;"	function	line:3
+0. ローカルにマスターをclone	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 0. ローカルにマスターをclone$/;"	function	line:6
+1. ブランチを作成する	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 1. ブランチを作成する$/;"	function	line:9
+2. 作業・・・	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 2. 作業・・・$/;"	function	line:14
+3. branchにコミット	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 3. branchにコミット$/;"	function	line:17
+4. プルリクエスト送信	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 4. プルリクエスト送信$/;"	function	line:23
+デプロイ	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^## デプロイ$/;"	function	line:26
