@@ -1,0 +1,27 @@
+os	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^import os$/;"	namespace	line:13
+BASE_DIR	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	variable	line:16
+DEBUG	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^DEBUG = True$/;"	variable	line:26
+ALLOWED_HOSTS	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^ALLOWED_HOSTS = []$/;"	variable	line:28
+INSTALLED_APPS	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^INSTALLED_APPS = [$/;"	variable	line:33
+MIDDLEWARE	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^MIDDLEWARE = [$/;"	variable	line:43
+ROOT_URLCONF	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^ROOT_URLCONF = 'djangovuewebpack.urls'$/;"	variable	line:53
+TEMPLATES	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^TEMPLATES = [$/;"	variable	line:55
+WSGI_APPLICATION	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^WSGI_APPLICATION = 'djangovuewebpack.wsgi.application'$/;"	variable	line:71
+DATABASES	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^DATABASES = {$/;"	variable	line:77
+AUTH_PASSWORD_VALIDATORS	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	variable	line:88
+LANGUAGE_CODE	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	variable	line:107
+TIME_ZONE	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^TIME_ZONE = 'UTC'$/;"	variable	line:109
+USE_I18N	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^USE_I18N = True$/;"	variable	line:111
+USE_L10N	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^USE_L10N = True$/;"	variable	line:113
+USE_TZ	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^USE_TZ = True$/;"	variable	line:115
+STATIC_URL	/Users/toyodayuki/Documents/git/shijo-karasuma/djangovuewebpack/settings.py	/^STATIC_URL = '\/static\/'$/;"	variable	line:121
+render	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^from django.shortcuts import render$/;"	namespace	line:1
+csrf_exempt	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	namespace	line:2
+JsonResponse	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^from django.http import JsonResponse$/;"	namespace	line:3
+index	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^def index(request):$/;"	function	line:6
+test_api	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^def test_api(request):$/;"	function	line:10
+do_something	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/views.py	/^def do_something(request):$/;"	function	line:14
+url	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/urls.py	/^from django.conf.urls import url, include$/;"	namespace	line:1
+include	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/urls.py	/^from django.conf.urls import url, include$/;"	namespace	line:1
+views	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/urls.py	/^from . import views$/;"	namespace	line:3
+urlpatterns	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/urls.py	/^urlpatterns = [$/;"	variable	line:5

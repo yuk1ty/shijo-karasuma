@@ -23,7 +23,9 @@
 
       <div class="wrapper">
         <p>/api/test</p>
-        <span>foo</span>: <span>{{ testData.foo }}</span>
+        <span>foo</span>: <span>{{ testData.data.foo }}</span>
+        <p>add tod api test</p>
+        <span>add</span>: <span>{{ additional.data.message }}</span>
       </div>
     </div>
 
@@ -31,22 +33,28 @@
 </template>
 
 <script>
-import {get} from 'jquery'
-
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      testData: {}
+      testData: {},
+      additional: {}
     }
   },
   mounted () {
     console.log('mounted')
 
-    get('/api/test', {}, (res) => {
+    // axiosの疎通テスト
+    // エラー吐くかも
+    this.axios.get('/api/test').then((res) => {
       console.log(res)
       this.testData = res
+    })
+
+    this.axios.get('/api/do_something').then((res) => {
+      console.log(res)
+      this.additional = res
     })
   }
 }

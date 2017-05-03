@@ -9,3 +9,7 @@ def index(request):
 @csrf_exempt
 def test_api(request):
     return JsonResponse({'foo': 'bar'})
+
+@csrf_exempt
+def do_something(request):
+    return JsonResponse({ 'message' : '反応してないの？' })
