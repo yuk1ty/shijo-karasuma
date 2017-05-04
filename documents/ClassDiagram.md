@@ -18,3 +18,4 @@ start | float
 high | float
 low | float
 end | float
+stockId | long
