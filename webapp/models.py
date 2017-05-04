@@ -16,7 +16,7 @@ class Stock(models.Model):
     version = models.IntegerField(default=0)
 
 
-class StockDate(models.Model):
+class StockData(models.Model):
     id = models.AutoField(primary_key=True)
     datetime = models.DateTimeField(auto_now=False)
     start = models.FloatField
