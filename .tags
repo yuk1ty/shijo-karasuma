@@ -33,3 +33,14 @@ shijo-karasuma	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^# shij
 3. branchにコミット	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 3. branchにコミット$/;"	function	line:17
 4. プルリクエスト送信	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^### 4. プルリクエスト送信$/;"	function	line:23
 デプロイ	/Users/toyodayuki/Documents/git/shijo-karasuma/README.md	/^## デプロイ$/;"	function	line:26
+unittest	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/test/csv_loader_test.py	/^import unittest$/;"	namespace	line:1
+csvloader	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/test/csv_loader_test.py	/^import csvloader$/;"	namespace	line:2
+csv	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^import csv$/;"	namespace	line:1
+CsvLoader	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^class CsvLoader:$/;"	class	line:3
+__init__	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^    def __init__(self):$/;"	member	line:5	class:CsvLoader
+load	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^    def load(self, file_path):$/;"	member	line:8	class:CsvLoader
+sys	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^import sys$/;"	namespace	line:1
+unittest	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^import unittest$/;"	namespace	line:3
+CsvLoader	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^from csvloader import CsvLoader$/;"	namespace	line:4
+CsvLoaderTest	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^class CsvLoaderTest(unittest.TestCase):$/;"	class	line:6
+test_load	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^    def test_load(self):$/;"	member	line:8	class:CsvLoaderTest
