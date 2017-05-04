@@ -28,7 +28,13 @@ export default {
   methods: {
     addIssue: function () {
       const self = this
-      let toSave = self.stock
+      let toSave = {
+        code: self.stock.code,
+        name: self.stock.name,
+        type: self.stock.type,
+        createdDateTime: new Date(),
+        deleted: '0'
+      }
       self.axios.post('/api/stock/save', JSON.stringify(toSave)).then((res) => {
         // TODO ちゃんとしたダイアログが立ち上がるようにするべき
         alert("登録が完了しました。")
