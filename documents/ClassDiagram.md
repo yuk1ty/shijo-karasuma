@@ -6,6 +6,7 @@ name | String
 type | Index or Individual
 code | String
 createdDatetime | LDate
+deleted | TRUE or FALSE
 
 # StockData
 field | type
@@ -17,3 +18,4 @@ start | float
 high | float
 low | float
 end | float
+stockId | long
