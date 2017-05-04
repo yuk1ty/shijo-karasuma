@@ -1,22 +1,15 @@
 <template>
   <div id="app">
     <p>Stock Code</p>
-    <input v-model="code" placeholder="Stock Code">
+    <input v-model="stock.code" placeholder="Stock Code">
     <p>Stock Name</p>
-    <input v-model="name" placeholder="Stock Name">
+    <input v-model="stock.name" placeholder="Stock Name">
     <p>Type</p>
-    <select v-model="type">
+    <select v-model="stock.type">
       <option>Index</option>
       <option>Individual</option>
     </select>
-    <!-- <span>Selected: {{ type }}</span> -->
-    <button type="button" name="button" v-on:click="addIssue">Register</button>
-    <!-- <input type="file" id="selfile"> -->
-    {{ stock.code }}
-    {{ stock.name }}
-    {{ stock.type }}
-    {{ stock.createdDateTime }}
-    {{ stock.deleted }}
+    <button type="button" name="button" v-on:click="addIssue()">Register</button>
   </div>
 </template>
 
@@ -30,21 +23,18 @@ export default {
         name: '',
         type: ''
       }
-      // code: '',
-      // name: '',
-      // type: '',
-      // stock: ''
     }
   },
   methods: {
     addIssue: function () {
-      this.stock = {
-        code: this.code,
-        name: this.name,
-        type: this.type,
-        createdDateTime: new Date(),
-        deleted: '0'
-      }
+      const self = this
+      let toSave = self.stock
+      self.axios.post('/api/stock/save', JSON.stringify(toSave)).then((res) => {
+        // TODO ちゃんとしたダイアログが立ち上がるようにするべき
+        alert("登録が完了しました。")
+      }).catch((res) => {
+        console.log("error!: " + res)
+      })
     }
   }
 }
