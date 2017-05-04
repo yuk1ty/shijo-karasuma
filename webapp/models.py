@@ -15,7 +15,6 @@ class Stock(models.Model):
     createdDatetime = models.DateTimeField(auto_now=True)
     version = models.IntegerField(default=0)
 
-
 class StockData(models.Model):
     id = models.AutoField(primary_key=True)
     datetime = models.DateTimeField(auto_now=False)
