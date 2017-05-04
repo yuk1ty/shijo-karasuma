@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
+from webapp.models import Stock
 
 
 def index(request):
@@ -46,3 +47,18 @@ def stock(request):
         'end': '19550.00'
       }]
     })
+
+
+@csrf_exempt
+def save_stock(request):
+    print(request)
+
+
+@csrf_exempt
+def all_stocks(request):
+    print(request)
+
+
+@csrf_exempt
+def find_stock_by_code(request):
+    print(request)
