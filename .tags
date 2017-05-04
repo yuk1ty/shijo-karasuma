@@ -39,3 +39,8 @@ csv	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.p
 CsvLoader	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^class CsvLoader:$/;"	class	line:3
 __init__	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^    def __init__(self):$/;"	member	line:5	class:CsvLoader
 load	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/csvloader/csv_loader.py	/^    def load(self, file_path):$/;"	member	line:8	class:CsvLoader
+sys	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^import sys$/;"	namespace	line:1
+unittest	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^import unittest$/;"	namespace	line:3
+CsvLoader	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^from csvloader import CsvLoader$/;"	namespace	line:4
+CsvLoaderTest	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^class CsvLoaderTest(unittest.TestCase):$/;"	class	line:6
+test_load	/Users/toyodayuki/Documents/git/shijo-karasuma/webapp/test/csvloader/csv_loader_test.py	/^    def test_load(self):$/;"	member	line:8	class:CsvLoaderTest
