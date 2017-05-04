@@ -6,6 +6,7 @@ name | String
 type | Index or Individual
 code | String
 createdDatetime | LDate
+deleted | TRUE or FALSE
 
 # StockData
 field | type
