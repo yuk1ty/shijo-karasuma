@@ -1,15 +1,9 @@
 <template lang="pug">
   div.hello
     h1 {{ msg }}
-    div
-      h2 GET data from Django API (/api/test)
-      div.wrapper
-        p /api/test
-          span foo:
-          span {{ testData.data.foo }}
-        p add tod api test
-          span add:
-          span {{ additional.data.message }}
+</template>
+
+<script>
 </template>
 
 <script>
