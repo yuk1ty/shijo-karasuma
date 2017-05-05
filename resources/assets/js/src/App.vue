@@ -14,6 +14,9 @@
 </template>
 
 <script>
+import { Stock } from './context/entity/stock'
+import moment from 'moment'
+
 export default {
   name: 'app',
   data () {
@@ -28,16 +31,12 @@ export default {
   methods: {
     addIssue: function () {
       const self = this
-      let toSave = {
-        code: self.stock.code,
-        name: self.stock.name,
-        type: self.stock.type,
-        createdDateTime: new Date(),
-        deleted: '0'
-      }
-      self.axios.post('/api/stock/save', JSON.stringify(toSave)).then((res) => {
+      let moment = require("moment")
+      const toSave = new Stock(self.stock, moment().format("YYYY-MM-DD HH:mm:ss"), '0')
+      self.axios.post('/api/stock/save', toSave.toJson()).then((res) => {
         // TODO ちゃんとしたダイアログが立ち上がるようにするべき
         alert("登録が完了しました。")
+        console.log(res)
       }).catch((res) => {
         console.log("error!: " + res)
       })
