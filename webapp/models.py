@@ -3,6 +3,8 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
+
+
 class Stock(models.Model):
     MARKET_CHOICES = (
         (u'IX', u'Index'),
@@ -15,11 +17,12 @@ class Stock(models.Model):
     createdDatetime = models.DateTimeField(auto_now=True)
     version = models.IntegerField(default=0)
 
+
 class StockData(models.Model):
     id = models.AutoField(primary_key=True)
-    datetime = models.DateTimeField(auto_now=False)
+    date_time = models.DateTimeField(auto_now=True)
     start = models.FloatField
     high = models.FloatField
     low = models.FloatField
     end = models.FloatField
-    stock = models.ForeignKey(Stock)
+    stock_id = models.ForeignKey(Stock)

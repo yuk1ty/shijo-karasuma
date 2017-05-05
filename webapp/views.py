@@ -55,22 +55,15 @@ def stock(request):
 @csrf_exempt
 def save_stock(request):
     data = json.loads(request.body.decode("utf-8"))['data']
-    to_register = Stock(name = data['name'], type = __convert_type(data['type']), code = data['code'], createdDatetime = datetime.strptime(data['createdDateTime'], '%Y-%m-%d %H:%M:%S'), version=0)
+    to_register = Stock(name = data['name'], type = data['type'], code = data['code'], createdDatetime = datetime.strptime(data['createdDateTime'], '%Y-%m-%d %H:%M:%S'), version=0)
     to_register.save()
     return JsonResponse({ 'message' : '成功しました' })
-
-def __convert_type(type):
-    if type == "Index":
-        return "IX"
-    elif type == "Individual":
-        return "ID"
-    else:
-        return ""
 
 
 @csrf_exempt
 def all_stocks(request):
-    print(request)
+    # TODO まだ返らないっぽい
+    return JsonResponse(Stock.objects.all())
 
 
 @csrf_exempt

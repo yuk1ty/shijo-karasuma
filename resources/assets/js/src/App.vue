@@ -1,46 +1,16 @@
-<template>
-  <div id="app">
-    <p>Stock Code</p>
-    <input v-model="stock.code" placeholder="Stock Code">
-    <p>Stock Name</p>
-    <input v-model="stock.name" placeholder="Stock Name">
-    <p>Type</p>
-    <select v-model="stock.type">
-      <option>Index</option>
-      <option>Individual</option>
-    </select>
-    <button type="button" name="button" v-on:click="addIssue()">Register</button>
-  </div>
+<template lang="pug">
+  div#app
+    application-header
+    router-view
 </template>
 
 <script>
-import { Stock } from './context/entity/stock'
-import moment from 'moment'
+import ApplicationHeader from '@/components/header/ApplicationHeader'
 
 export default {
   name: 'app',
-  data () {
-    return {
-      stock: {
-        code: '',
-        name: '',
-        type: ''
-      }
-    }
-  },
-  methods: {
-    addIssue: function () {
-      const self = this
-      let moment = require("moment")
-      const toSave = new Stock(self.stock, moment().format("YYYY-MM-DD HH:mm:ss"), '0')
-      self.axios.post('/api/stock/save', toSave.toJson()).then((res) => {
-        // TODO ちゃんとしたダイアログが立ち上がるようにするべき
-        alert("登録が完了しました。")
-        console.log(res)
-      }).catch((res) => {
-        console.log("error!: " + res)
-      })
-    }
+  components: {
+    'application-header': ApplicationHeader,
   }
 }
 </script>

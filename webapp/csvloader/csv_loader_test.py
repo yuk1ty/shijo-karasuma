@@ -1,6 +1,7 @@
 import unittest
 import csv_loader
 
+
 class CsvLoaderTest(unittest.TestCase):
 
     def test_load(self):

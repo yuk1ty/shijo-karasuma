@@ -1,5 +1,6 @@
 import csv
 
+
 def load(file_path):
     result = []
 
