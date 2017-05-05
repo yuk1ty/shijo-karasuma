@@ -1,9 +1,13 @@
 import csv
 
 def load(file_path):
-  with open(file_path, 'r') as file:
-    reader = csv.reader(file)
-    header = next(reader)
+    result = []
 
-    for row in reader:
-      print(row)
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file)
+        header = next(reader)
+
+        for row in reader:
+            result.append(row)
+
+    return result

@@ -4,7 +4,7 @@ import csv_loader
 class CsvLoaderTest(unittest.TestCase):
 
     def test_load(self):
-        csv_loader.load("data/test.csv")
+        print(csv_loader.load("data/test.csv"))
 
         self.assertEqual(True, True)
 
