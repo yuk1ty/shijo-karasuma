@@ -68,11 +68,12 @@ def all_stocks(request):
 
 @csrf_exempt
 def find_stock_by_code(request):
-    print(request)
+    return JsonResponse({ 'message' : '反応してないの？' })
 
 
 @csrf_exempt
 def import_stock_data(request):
-    print(request)
-    # 一旦サンプルでdataを入れる
-    result = csv_loader.load('data/test.csv')
+    filename = request.POST.get('filename', '')
+    stock_id = request.POST.get('stock_id', None)
+    result = csv_loader.load(filename, stock_id)
+    return JsonResponse({'data':result})
