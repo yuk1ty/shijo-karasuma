@@ -1,15 +1,21 @@
 <template lang="pug">
   div#app
+    application-header
     router-view
 </template>
 
 <script>
+import ApplicationHeader from '@/components/header/ApplicationHeader'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'application-header': ApplicationHeader,
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
