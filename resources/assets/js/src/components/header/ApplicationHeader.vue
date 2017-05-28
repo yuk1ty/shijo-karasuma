@@ -6,7 +6,7 @@
     div.nav
       div.links
         router-link(v-for="route in this.$router.options.routes" tag="li" :to="route.path")
-          a {{ route.name }}
+          a {{ route.name | uppercase }}
     div.current
       div.line
     div.pagename(v-model="currentRoute") {{ currentRoute.name }}
@@ -59,7 +59,7 @@ h1 {
 }
 
 .nav {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(236, 236, 236);
   width: 100vw;
   height: 60px;
   line-height: 60px;
@@ -109,5 +109,15 @@ h1 {
   align-content: center;
   align-self: center;
   flex-wrap: center;
+}
+
+a {
+  text-decoration: none;
+  color: #3f5366;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #2c3e50;
 }
 </style>
