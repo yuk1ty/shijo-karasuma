@@ -1,12 +1,17 @@
 <template lang="pug">
   div#index
+    p {{ test }}
 </template>
 
 <script>
 export default {
-  name: 'index',
+  data () {
+    return {
+      test: 'home screen'
+    }
+  }
 }
 </script>
 
-<style>
+<style lang="css">
 </style>
