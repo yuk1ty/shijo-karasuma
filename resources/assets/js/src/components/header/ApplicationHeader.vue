@@ -45,7 +45,7 @@ h1 {
 
 .logo {
   margin: 10px;
-  background-color: rgb(99, 174, 215);
+  background-color: rgb(255, 243, 79);
   width: 190px;
   height:70px;
   display: flex;
@@ -90,7 +90,7 @@ h1 {
   top: 25px;
   height: 5px;
   width: 100vw;
-  background-color: rgb(99, 174, 215);
+  background-color: rgb(254, 123, 211);
   z-index: 0;
 }
 .pagename {

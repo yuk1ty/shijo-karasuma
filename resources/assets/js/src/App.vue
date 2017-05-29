@@ -3,6 +3,7 @@
     application-header
     div#page
       router-view.rv
+    canvas#zodiac
 </template>
 
 <script>
@@ -31,6 +32,15 @@ html, body {
   color: #2c3e50;
 }
 
+#zodiac {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
 #page {
   display: flex;
   flex-wrap: nowrap;
@@ -38,10 +48,13 @@ html, body {
 
 .rv {
   padding: 15px 0 0 15px;
-  background-color: rgb(244, 244, 244);
+  // background-color: transparent;
   min-height: 100vh;
   min-width: 100vw;
   overflow-y: scroll;
 }
 
+*::selection {
+  background: rgba(254, 123, 211, 0.25);
+}
 </style>
