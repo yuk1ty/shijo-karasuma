@@ -52,7 +52,7 @@ export default {
     },
     getStockData () {
       let self = this
-      this.axios.get('/api/stock').then((res) => {
+      this.axios.get('/api/stock/get').then((res) => {
         console.log(res)
         this.testStock = res
         this.stockName = res.data.name
@@ -61,7 +61,7 @@ export default {
           self.endData.push(value.end)
         })
         this.stockData.forEach(function(value, index) {
-          self.dateTime.push(value.dateTime)
+          self.dateTime.push(`${value.date + ' ' + value.time}`)
         })
       })
       this.getData()
