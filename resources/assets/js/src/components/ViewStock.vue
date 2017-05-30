@@ -63,8 +63,8 @@ export default {
         this.stockData.forEach(function(value, index) {
           self.dateTime.push(`${value.date + ' ' + value.time}`)
         })
+        this.chart.update()
       })
-      this.getData()
     }
   },
   created () {
