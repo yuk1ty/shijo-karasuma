@@ -5,11 +5,7 @@ id | long
 name | String
 type | Index or Individual
 code | String
-<<<<<<< HEAD
 createdDateTime | LDate
-=======
-createdDatetime | LDate
->>>>>>> 8fe842df750995dccc67c38ca4841f9866554439
 deleted | TRUE or FALSE
 
 # StockData
